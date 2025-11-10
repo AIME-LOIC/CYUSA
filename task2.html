@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Price List</title>
+    <style>
+        /* CSS for border and padding */
+        .price-table {
+            border: 2px solid #333;
+            border-collapse: collapse;
+            width: 90%;
+        }
+        .price-table th, .price-table td {
+            border: 1px solid #777;
+            padding: 10px; /* Cell padding */
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="price-table">
+        <thead>
+            <tr>
+                <th colspan="5" style="text-align: center; background-color: #F0F0F0;">
+                    Available Products at TechZone
+                </th>
+            </tr>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Unit Price</th>
+                <th>Stock Status</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr><td>P001</td><td>Laptop X</td><td>Computing</td><td>$1200</td><td>In Stock</td></tr>
+            <tr><td>P002</td><td>Smartphone Z</td><td>Mobile</td><td>$750</td><td>Low Stock</td></tr>
+            <tr><td>P003</td><td>4K Monitor</td><td>Display</td><td>$350</td><td>In Stock</td></tr>
+            <tr><td>P004</td><td>Wireless Mouse</td><td>Accessory</td><td>$25</td><td>In Stock</td></tr>
+            <tr><td>P005</td><td>Noise-Cancelling Headset</td><td>Audio</td><td>$150</td><td>Out of Stock</td></tr>
+            <tr><td>P006</td><td>External SSD 1TB</td><td>Storage</td><td>$110</td><td>In Stock</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
