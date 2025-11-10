@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Feedback Form</title>
+</head>
+<body>
+
+    <h2>Café Customer Feedback Form</h2>
+    <form action="/submit-feedback" method="POST" style="width: 400px; padding: 15px; border: 1px solid #ccc;">
+        
+        <p>
+            <label for="custName">Name:</label><br>
+            <input type="text" id="custName" name="custName">
+        </p>
+
+        <p>
+            <label for="custEmail">Email:</label><br>
+            <input type="email" id="custEmail" name="custEmail">
+        </p>
+
+        <p>
+            **Rating (1 = Poor, 5 = Excellent):**<br>
+            <input type="radio" id="rate5" name="rating" value="5" required>
+            <label for="rate5">5</label>
+            <input type="radio" id="rate4" name="rating" value="4">
+            <label for="rate4">4</label>
+            <input type="radio" id="rate3" name="rating" value="3">
+            <label for="rate3">3</label>
+            <input type="radio" id="rate2" name="rating" value="2">
+            <label for="rate2">2</label>
+            <input type="radio" id="rate1" name="rating" value="1">
+            <label for="rate1">1</label>
+        </p>
+
+        <p>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="45"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" id="visitAgain" name="visitAgain" value="yes">
+            <label for="visitAgain">Would you visit again?</label>
+        </p>
+
+        <p>
+            <button type="submit">Submit Feedback</button>
+        </p>
+    </form>
+</body>
+</html>
