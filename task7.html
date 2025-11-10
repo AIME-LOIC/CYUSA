@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h2>Job Application Form</h2>
+    <form action="/submit-application" method="POST" enctype="multipart/form-data" style="width: 400px; padding: 15px; border: 1px solid #ccc;">
+        
+        <p>
+            <label for="appName">Applicant's Name *</label><br>
+            <input type="text" id="appName" name="appName" required>
+        </p>
+
+        <p>
+            <label for="appEmail">Email *</label><br>
+            <input type="email" id="appEmail" name="appEmail" required>
+        </p>
+
+        <p>
+            <label for="contact">Contact Number *</label><br>
+            <input type="tel" id="contact" name="contact" required>
+        </p>
+
+        <p>
+            <label for="position">Position Applying For *</label><br>
+            <select id="position" name="position" required>
+                <option value="">-- Select Position --</option>
+                <option value="sw_dev">Software Developer</option>
+                <option value="ux_designer">UX Designer</option>
+                <option value="marketing">Marketing Specialist</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="resume">Upload Resume (PDF/DOCX) *</label><br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        </p>
+
+        <p>
+            <label for="bio">Bio / Statement of Interest *</label><br>
+            <textarea id="bio" name="bio" rows="5" cols="45" required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit Application</button>
+        </p>
+    </form>
+</body>
+</html>
