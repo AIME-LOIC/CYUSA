@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Enrollment Form</title>
+</head>
+<body>
+
+    <h2>Course Enrollment Form</h2>
+    <form action="/enroll" method="POST" style="width: 400px; padding: 15px; border: 1px solid #ccc;">
+        
+        <p>
+            <label for="studentName">Student Name:</label><br>
+            <input type="text" id="studentName" name="studentName" required>
+        </p>
+
+        <p>
+            <label for="enrollEmail">Email:</label><br>
+            <input type="email" id="enrollEmail" name="enrollEmail" required>
+        </p>
+
+        <p>
+            <label for="course">Course Selection:</label><br>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="html">Advanced HTML & CSS</option>
+                <option value="js">JavaScript Fundamentals</option>
+                <option value="python">Python for Data Science</option>
+            </select>
+        </p>
+
+        <p>
+            **Payment Method:**<br>
+            <input type="radio" id="credit" name="payment" value="credit" required>
+            <label for="credit">Credit Card</label>
+            <input type="radio" id="paypal" name="payment" value="paypal">
+            <label for="paypal">PayPal</label>
+            <input type="radio" id="transfer" name="payment" value="transfer">
+            <label for="transfer">Bank Transfer</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="agreement" name="agreement" onclick="toggleSubmit()">
+            <label for="agreement">I agree to the terms and conditions.</label>
+        </p>
+
+        <p>
+            <button type="submit" id="submitBtn" disabled>Submit Enrollment</button>
+        </p>
+    </form>
+
+    <script>
+        // JavaScript function to enable/disable the submit button
+        function toggleSubmit() {
+            const agreementCheckbox = document.getElementById('agreement');
+            const submitButton = document.getElementById('submitBtn');
+            // If the checkbox is checked, remove the 'disabled' attribute, otherwise add it.
+            submitButton.disabled = !agreementCheckbox.checked;
+        }
+    </script>
+</body>
+</html>
