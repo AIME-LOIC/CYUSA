@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Attendance Summary</title>
+    <style>
+        .attendance-table {
+            border-collapse: collapse;
+            width: 70%;
+        }
+        .attendance-table th, .attendance-table td {
+            border: 1px solid #aaa;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Attendance Summary</h2>
+    <table class="attendance-table">
+        <thead>
+            <tr>
+                <th rowspan="2">Employee ID</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Department</th>
+                <th colspan="3">Days / Attendance</th>
+            </tr>
+            <tr>
+                <th>Present</th>
+                <th>Absent</th>
+                <th>Total Working Days</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr><td>E101</td><td>Anna Lee</td><td>HR</td><td>20</td><td>2</td><td>22</td></tr>
+            <tr><td>E102</td><td>Ben Carter</td><td>Sales</td><td>21</td><td>1</td><td>22</td></tr>
+            <tr><td>E103</td><td>Cathy Jones</td><td>IT</td><td>18</td><td>4</td><td>22</td></tr>
+            <tr><td>E104</td><td>David King</td><td>HR</td><td>22</td><td>0</td><td>22</td></tr>
+            <tr><td>E105</td><td>Eva Green</td><td>Sales</td><td>19</td><td>3</td><td>22</td></tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td colspan="6" style="text-align: right; background-color: #F0F0F0;">
+                    **Average Attendance Rate: 90.9%** (100 Present / 110 Total Days)
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
